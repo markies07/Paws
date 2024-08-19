@@ -49,10 +49,10 @@ function Login({ isOpen, onClose }) {
             </div>
             <div className='flex flex-col items-center h-full'>
                 <div className='w-[80%] py-16'>
-                    <p className='text-4xl font-semibold'>Login to <br /> start adopting.</p>
+                    <p className='text-4xl text-[#333333] font-semibold'>Login to <br /> start adopting.</p>
                 </div>
                 <div className='w-[80%] flex gap-3 h-full items-end'>
-                    <button className='w-full py-3 h-sm:py-4 font-semibold rounded-lg border-2 hover:bg-[#df4545] duration-150 border-primary bg-primary text-secondary'>Create Account</button>
+                    <button className='w-full py-3 h-sm:py-4 font-semibold rounded-lg border-2 hover:bg-[#df4545] hover:border-[#df4545] duration-150 border-primary bg-primary text-secondary'>Create Account</button>
                     <button className='w-full py-3 h-sm:py-4 font-semibold rounded-lg border-2 hover:bg-[#ffdddd] duration-150 border-primary text-primary'>Log in</button>
                 </div>
                 <div className='w-[80%] my-5'>
@@ -64,12 +64,12 @@ function Login({ isOpen, onClose }) {
                 </div>
                 <div className='w-[80%] pb-10 flex flex-col gap-3'>
                     {isLoading ? <LoadingScreen /> : (
-                        <button onClick={handleGoogleLogin} className='w-full relative py-2 h-sm:py-3 font-semibold rounded-lg border-2 border-primary text-primary hover:bg-[#ffdddd] duration-150'>Log in with Google
-                            <img className='absolute top-[7px] h-sm:top-[10px] left-3 w-7' src={google} alt="" />
+                        <button onClick={handleGoogleLogin} className='w-full relative py-2 h-sm:py-3 font-semibold rounded-lg border-2 border-[#179C52] text-secondary hover:bg-[#138847] hover:border-[#138847] bg-[#179C52] duration-150'>Log in with Google
+                            <img className='absolute top-[7px] h-sm:top-[11px] left-[14px] w-[25px]' src={google} alt="" />
                         </button>
                     )}
-                    <button className='w-full relative py-2 h-sm:py-3 font-semibold rounded-lg border-2 border-primary text-primary hover:bg-[#ffdddd] duration-150'>Log in with Facebook
-                        <img className='absolute top-[7px] h-sm:top-[10px] left-3 w-7' src={facebook} alt="" />
+                    <button className='w-full relative py-2 h-sm:py-3 font-semibold rounded-lg border-2 border-[#3B5998] bg-[#3B5998] text-secondary hover:border-[#314b85] hover:bg-[#314b85]  duration-150'>Log in with Facebook
+                        <img className='absolute top-[6px] h-sm:top-[10px] left-3 w-7' src={facebook} alt="" />
                     </button>
                 </div>
             </div>
