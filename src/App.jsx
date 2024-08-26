@@ -2,6 +2,10 @@ import React from "react"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
 import LandingPage from "./components/Landing Page/LandingPage"
 import Dashboard from "./components/User/Dashboard"
+import { ToastContainer } from "react-toastify"
+
+
+ToastContainer
 
 function App() {
   
@@ -12,6 +16,18 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="*" element={<Navigate to="/"/>}/>
       </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        toastStyle={{ zIndex: 9999 }}
+      />
     </Router>
   )
 }

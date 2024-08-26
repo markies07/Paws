@@ -3,3 +3,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* CustomToastStyles.css */
+  
+  .custom-toast-body {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .orange-bg {
+    background-color: #F75959;
+    color: #ffffff;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    z-index: 9999 !important;
+  }
+
+  .white-bg {
+    background-color: #FAFAFA;
+    color: #F75959;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    z-index: 9999 !important;
+  }
+  
+  
+  

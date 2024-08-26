@@ -7,7 +7,7 @@ import arrow from './assets/arrow.svg'
 import logo from './assets/orange-paws.png'
 import AnimalCard from '../General/AnimalCard'
 
-function Content({ onLoginClick, onCardClick }) {
+function Content({ onLoginClick }) {
   return (
     <div className='h-full'>
       {/* BANNER */}

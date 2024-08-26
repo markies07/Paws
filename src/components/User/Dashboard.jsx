@@ -1,13 +1,13 @@
 import React from 'react'
-import paws from '../../assets/images/white-logo.png'
+import NavBar from './NavBar'
+import Header from './Header'
+
 
 function Dashboard() {
   return (
-    <div className='flex w-full h-screen justify-center items-center bg-secondary'>
-        <div>
-          <img src={paws} alt="" />
-          <h1 className='text-center py-5 text-4xl font-bold text-primary'>Coming Soon ...</h1>
-        </div>
+    <div className='w-full min-h-screen bg-[#A1E4E4]'>
+        <Header />
+        <NavBar />
     </div>
 
   )
