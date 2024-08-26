@@ -12,7 +12,7 @@
     line-height: 1;
   }
 
-  .orange-bg {
+  .orange-bg{
     background-color: #F75959;
     color: #ffffff;
     font-family: 'Poppins';
@@ -27,6 +27,12 @@
     border-radius: 8px;
     z-index: 9999 !important;
   }
-  
-  
-  
+
+  .orange-bg .Toastify__toast-icon svg {
+    fill: #FAFAFA; 
+  }
+
+  .white-bg .Toastify__toast-icon svg {
+    fill: #F75959;
+  }
+
